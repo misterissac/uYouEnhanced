@@ -18,7 +18,9 @@
 #import "Tweaks/YouTubeHeader/YTIPivotBarItemRenderer.h"
 #import "Tweaks/YouTubeHeader/YTIBrowseRequest.h"
 #import "Tweaks/YouTubeHeader/YTIButtonRenderer.h"
+#import "Tweaks/YouTubeHeader/YTIElementRenderer.h"
 #import "Tweaks/YouTubeHeader/YTISectionListRenderer.h"
+#import "Tweaks/YouTubeHeader/YTWatchNextResultsViewController.h"
 #import "Tweaks/YouTubeHeader/YTPlayerOverlay.h"
 #import "Tweaks/YouTubeHeader/YTPlayerOverlayProvider.h"
 #import "Tweaks/YouTubeHeader/YTReelWatchPlaybackOverlayView.h"
@@ -49,6 +51,11 @@
 // Hide Double tap to seek Overlay
 @interface YTInlinePlayerDoubleTapIndicatorView : UIView
 @property (nonatomic, strong) UIView *_scrimOverlay;
+@end
+
+// YTTapToSeek - https://github.com/bhackel/YTTapToSeek
+@interface YTMainAppVideoPlayerOverlayViewController : UIViewController
+- (CGFloat)totalTime;
 @end
 
 // uYouPlus
